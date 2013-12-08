@@ -1,0 +1,591 @@
+/*! Mt Sinai Framework CSS */
+
+/* ==========================================================================
+   Framework styles: opinionated defaults
+   ========================================================================== */
+
+   html,
+   button,
+   input,
+   select,
+   textarea {
+    color: #222;
+  }
+
+  html {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+ ::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+ hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+ audio,
+ canvas,
+ img,
+ video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+ fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+ textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+   .browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+
+  /* ==========================================================================
+   Colors
+   ========================================================================== */
+
+   $black: #2C2C2C;
+   $blue: #01AEF0;
+   $gray-content: #E1E1E1;
+   $gray-copy: #CBCBCB;
+   $brown: #626262;
+   $light-blue: #01AEF0;
+   $account-blue: #0180B0;
+   $dark-blue: #0072D2;
+
+/* ==========================================================================
+   Fonts
+   ========================================================================== */
+
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.eot');
+    src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff'),
+         url('../fonts/opensans-bold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.eot');
+    src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+         url('../fonts/opensans-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-semibold-webfont.svg#open_sanssemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.eot');
+    src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff'),
+         url('../fonts/opensans-regular-webfont.ttf') format('truetype'),
+         url('../fonts/opensans-regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaymedium';
+    src: url('../fonts/raleway-medium-webfont.eot');
+    src: url('../fonts/raleway-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-medium-webfont.woff') format('woff'),
+         url('../fonts/raleway-medium-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-medium-webfont.svg#ralewaymedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+   h1,h2,h3,h4,h5 {
+    font: normal bold 20px/20px "ralewaymedium", sans-serif;
+   }
+
+   h1 { margin: 0; padding: 0;}
+   h2 { margin: 0; padding: 0; text-transform: uppercase; font-weight: normal; }
+
+/* ==========================================================================
+   Framework custom styles
+   ========================================================================== */
+
+body {
+  font: normal normal 15px/20px 'open_sansregular', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  height: auto !important;
+  height: 100%;
+  position: relative;
+
+  width: 100%;
+  min-height: 100%;
+
+  margin: 0 0 -46px 0;
+
+  header {
+    position: relative;
+    z-index: 10;
+    height: 50px;
+
+    background: $black;
+    border-bottom: 4px solid $blue;
+
+    h1.masthead {
+      float: left;
+
+      width: 185px;
+      height: 95px;
+      
+      background-color: #FFF;
+      border: 2px solid #E1E1E1;
+      border-top: transparent;
+
+      margin-left: 15px;
+      text-indent: 200px;
+
+      img {
+        position: absolute;
+        left: 23px;
+        top: 10px;
+      }
+
+      span {
+        position: absolute;
+        left: 30px;
+        top: 15px;
+        min-width: 600px;
+
+        color: $gray-copy;
+        font: normal bold 16px/20px "ralewaymedium", sans-serif;
+      }
+    }
+
+    .main-nav {
+      float: right;
+      width: 500px;
+
+      margin-right: 70px;
+
+      > ul {
+        float: right;
+      }
+
+      li {
+        float: left;
+
+        margin-right: 15px;
+
+        &.about-nav {
+          padding-left: 20px;
+
+          background: transparent url('../img/framework/icon-about.png') no-repeat 0 2px;
+          line-height: normal;
+        }
+
+        &.contact-nav {
+          padding-left: 20px;
+
+          background: transparent url('../img/framework/icon-contact.png') no-repeat 0 2px;
+          line-height: normal;
+        }
+
+        &.login-nav {
+          padding-right: 20px;
+
+          background: transparent url('../img/framework/icon-arrow-down.png') no-repeat right 7px;
+          line-height: normal;
+        }
+
+        &:hover a {
+          color: $gray-content;
+        }
+
+        a, span {
+          color: #FFF;
+          font: normal normal 13px/20px "open_sansregular", sans-serif;
+          text-decoration: none;
+        }
+        span {
+          font-size: 16px;
+        }
+
+        &.login-nav {
+          margin-left: 40px;
+          padding-bottom: 19px;
+          position: relative;
+      
+          a.login-name {
+            color: #FFF;
+            font: normal normal 16px/20px "open_sansregular", sans-serif;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .login-subnav {
+      display: none;
+      position: absolute;
+      right: -70px;
+      top: 37px;
+      width: 202px;
+
+      background-color: #CBEBFB;
+      border: 1px solid $light-blue;
+
+      margin: 0;
+      padding: 15px 10px 10px 10px;
+
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 189px;
+        left: 133px;
+        border-width: 0 15px 15px 15px;
+        border-style: solid;
+        border-color: #CBEBFB transparent;
+      }
+
+      h4 {
+        font: normal normal 15px/20px "ralewaybold", sans-serif;
+      }
+    
+      li {
+        float: none;   
+
+        h4 { 
+          margin: 0;
+          padding: 0;
+        }
+
+        ul {
+          margin: 0;
+          padding: 0;
+
+          li {
+
+          }
+        }
+      }
+
+      .acct-email {
+        color: #000;
+        font-size: 12px;
+      }
+
+      .acct-links {
+        margin-top: 20px;
+        padding-bottom: 20px;
+
+        li {
+          background: transparent url('../img/framework/icon-account-gear.png') no-repeat 0 4px;
+          margin-top: 10px;
+          padding-left: 20px;
+          line-height: normal;
+
+          a {
+            color: $account-blue;
+            font: normal normal 14px/20px "open_sansregular", sans-serif;
+          
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.wrapper header .main-nav li.login-nav:hover .login-subnav {
+  cursor: pointer;
+  display: block;
+}
+
+.content {
+  background-color: $gray-content;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+
+  width: 200px;
+  height: 30px;
+
+  background-color: $brown;
+  color: #FFF;
+  font: italic normal 12px/20px "open_sansregular", sans-serif;
+
+  p {
+    margin: 0;
+    padding: 5px 0 0 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+ .ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  /* IE 6/7 fallback */
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+ .hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+ .visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Media Queries for Responsive Design.
+   ========================================================================== */
+
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
+
+  @media print,
+  (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+   @media print {
+    * {
+      background: transparent !important;
+      color: #000 !important; /* Black prints faster: h5bp.com/s */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+
+    a[href]:after {
+      content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+      content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+     .ir a:after,
+     a[href^="javascript:"]:after,
+     a[href^="#"]:after {
+      content: "";
+    }
+
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
+
+    thead {
+      display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+
+    img {
+      max-width: 100% !important;
+    }
+
+    @page {
+      margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
+  }

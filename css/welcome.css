@@ -1,0 +1,89 @@
+/*! Mt Sinai Welcome CSS */
+/* ==========================================================================
+ Colors
+ ========================================================================== */
+/* ==========================================================================
+ Welcome styles: opinionated defaults
+ ========================================================================== */
+/* Overlay skin - fixed */
+.content.welcome {
+  background-color: #000;
+  opacity: 0.92;
+  -moz-opacity: 0.92;
+  -ms-filter: "alpha(opacity=92)"; }
+
+.overlay-fixed {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 8010;
+  background: url("../img/framework/overlay-bg.png");
+  width: auto;
+  height: auto;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -20; }
+
+.bg-fullscreen-img img {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.welcome-box {
+  position: relative;
+  top: 80px;
+  width: 550px;
+  height: 300px;
+  margin: 40px auto 25px;
+  padding: 60px 25px 30px;
+  background-color: #e1e1e1;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+  .welcome-box h2 {
+    margin-left: 30px;
+    margin-bottom: 40px;
+    font: normal bold 40px/20px "ralewaybold", sans-serif;
+    text-transform: none; }
+  .welcome-box .welcome-user {
+    position: relative;
+    right: -95px;
+    width: 100%;
+    margin: 15px 0; }
+    .welcome-box .welcome-user .welcome-user-avatar {
+      float: left; }
+    .welcome-box .welcome-user .welcome-user-name {
+      display: block;
+      float: left;
+      width: 390px;
+      margin-left: 10px;
+      margin-top: 12px;
+      padding: 10px 5px 10px 10px;
+      background-color: #0072d2;
+      color: #cbcbcb;
+      font-size: 16px; }
+  .welcome-box .welcome-message {
+    height: 55px;
+    width: 295px;
+    margin: 40px auto 0 auto;
+    padding: 20px 70px 5px 70px;
+    background-color: #F8F8F8;
+    text-align: center; }
+    .welcome-box .welcome-message p {
+      color: #777777;
+      font-size: 18px;
+      margin: 0;
+      padding: 0; }
+      .welcome-box .welcome-message p strong {
+        color: #000;
+        font: normal bold 17px/20px 'open_sanssemibold', sans-serif; }

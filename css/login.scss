@@ -1,0 +1,129 @@
+/*! Mt Sinai Framework CSS */
+
+
+/* ==========================================================================
+ Colors
+ ========================================================================== */
+
+ $black: #2C2C2C;
+ $blue: #01AEF0;
+ $gray-content: #E1E1E1;
+ $gray-copy: #CBCBCB;
+ $gray-dark-copy: #777777;
+ $brown: #626262;
+ $light-blue: #01ADEF;
+ $dark-blue: #0072D2;
+
+
+/* ==========================================================================
+ Login styles: opinionated defaults
+ ========================================================================== */
+
+ .content.login {
+  background-color: #000;
+  opacity: 0.92; 
+  -moz-opacity: 0.92;
+  -ms-filter: "alpha(opacity=92)";
+ }
+
+ /* Overlay skin - fixed */
+
+ .overlay-fixed {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 8010;
+  background: url('../img/framework/overlay-bg.png');
+  width: auto;
+  height: auto;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -20;
+ }
+
+ .bg-fullscreen-img img {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+ }
+
+ .login-container {
+  position: relative;
+  top: 160px;
+
+  width: 315px;
+  height: 310px;
+
+  margin: 0 auto 25px;
+  padding: 20px 25px 30px;
+
+  background-color: $gray-content;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+
+  h2 {
+
+   margin-top: -30px;
+   margin-bottom: 30px;
+
+   color: $gray-dark-copy;
+   text-align: center;
+   text-transform: none;
+  }
+
+  input {
+   width: 100%;
+   display: block;
+   margin-bottom: 10px;
+   z-index: 1;
+   position: relative;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+  }
+
+  .login-avatar {
+   position: relative;
+   top: -50px;
+
+   height: 90px;
+   width: 90px;
+
+   margin: 0 auto;
+
+   background-color: #FFF;
+   text-align: center;
+
+   img {
+    margin: 10px auto;
+    width: 65px;
+   }
+  }
+
+  .submit-btn {
+
+   height: 40px;
+
+   background-color: $dark-blue;
+   border: none;
+   color: #FFF;
+   font: normal normal 15px "ralewayregular", sans-serif;
+   text-transform: uppercase;
+
+   &:hover {
+    background-color: $light-blue;
+   } 
+  }
+ }
+

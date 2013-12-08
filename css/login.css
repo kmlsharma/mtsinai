@@ -1,0 +1,87 @@
+/*! Mt Sinai Framework CSS */
+/* ==========================================================================
+ Colors
+ ========================================================================== */
+/* ==========================================================================
+ Login styles: opinionated defaults
+ ========================================================================== */
+.content.login {
+  background-color: #000;
+  opacity: 0.92;
+  -moz-opacity: 0.92;
+  -ms-filter: "alpha(opacity=92)"; }
+
+/* Overlay skin - fixed */
+.overlay-fixed {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 8010;
+  background: url("../img/framework/overlay-bg.png");
+  width: auto;
+  height: auto;
+  display: block;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: -20; }
+
+.bg-fullscreen-img img {
+  z-index: -999;
+  min-height: 100%;
+  min-width: 1024px;
+  width: 100%;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.login-container {
+  position: relative;
+  top: 160px;
+  width: 315px;
+  height: 310px;
+  margin: 0 auto 25px;
+  padding: 20px 25px 30px;
+  background-color: #e1e1e1;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3); }
+  .login-container h2 {
+    margin-top: -30px;
+    margin-bottom: 30px;
+    color: #777777;
+    text-align: center;
+    text-transform: none; }
+  .login-container input {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+    z-index: 1;
+    position: relative;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+  .login-container .login-avatar {
+    position: relative;
+    top: -50px;
+    height: 90px;
+    width: 90px;
+    margin: 0 auto;
+    background-color: #FFF;
+    text-align: center; }
+    .login-container .login-avatar img {
+      margin: 10px auto;
+      width: 65px; }
+  .login-container .submit-btn {
+    height: 40px;
+    background-color: #0072d2;
+    border: none;
+    color: #FFF;
+    font: normal normal 15px "ralewayregular", sans-serif;
+    text-transform: uppercase; }
+    .login-container .submit-btn:hover {
+      background-color: #01adef; }
